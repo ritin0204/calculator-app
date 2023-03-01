@@ -1,0 +1,18 @@
+:root {
+  --body-bg: hsl(268, 75%, 9%);
+  --result-bg: hsl(268, 71%, 12%);
+  --result-txt: hsl(52, 100%, 62%);
+  --btn-container-bg: hsl(268, 71%, 12%);
+  --num-btn-bg: hsl(268, 47%, 21%);
+  --num-btn-txt:hsl(52, 100%, 62%) ;
+  --num-btn-shadow: hsl(290, 70%, 36%);
+  --fn-btn-bg: hsl(281, 89%, 26%);
+  --fn-btn-txt:hsl(0, 0%, 100%) ;
+  --fn-btn-shadow: hsl(290, 70%, 36%);
+  --equal-btn-bg: hsl(176, 100%, 44%);
+  --equal-btn-txt: hsl(198, 20%, 13%);
+  --equal-btn-shadow: hsl(177, 92%, 70%);
+  --theme-btn-bg: hsl(268, 71%, 12%);
+  --theme-btn-indicator: hsl(176, 100%, 44%);
+  --theme-btn-txt:hsl(52, 100%, 62%) ;
+}/*# sourceMappingURL=theme3vars.css.map */

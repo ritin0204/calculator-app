@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.xd
+.prettierignore
+*.scss
+*.css.map
+style-guide.md

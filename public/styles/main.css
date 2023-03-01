@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-bg);
+  font-size: 32px;
+  color: var(--result-txt);
+  height: 100vh;
+  overflow: hidden;
+  font-family: "League Spartan", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 375px;
+  max-height: 100vh;
+  aspect-ratio: 9/16;
+  margin: auto;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.App header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+header .theme-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  height: 2.2rem;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.change-theme-div {
+  width: 40%;
+}
+.change-theme-div p {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.change-theme-div .indicator-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2px;
+}
+.change-theme-div .indicator-div .inner-indicator {
+  background-color: var(--theme-btn-bg);
+  height: 0.9rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40%;
+}
+.change-theme-div .indicator-div .inner-indicator .active-theme {
+  background-color: var(--theme-btn-indicator);
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 0.1rem solid var(--theme-btn-bg);
+}
+.change-theme-div .indicator-div .inner-indicator div {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background-color: var(--theme-btn-bg);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.screen {
+  width: 100%;
+  height: 15%;
+  background-color: var(--result-bg);
+  margin: 0 0 20px 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.screen .result-div {
+  width: 90%;
+  height: 50%;
+  font-size: 2.5rem;
+  color: var(--result-txt);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.dial-pad {
+  width: 100%;
+  min-height: 50%;
+  border-radius: 8px;
+  background-color: var(--btn-container-bg);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: 5%;
+  box-sizing: border-box;
+}
+.dial-pad button {
+  border: none;
+  outline: none;
+  background-color: var(--num-btn-bg);
+  color: var(--num-btn-txt);
+  font-size: 1.3rem;
+  font-weight: 700;
+  width: 3.7rem;
+  height: 2.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 3px 0px 0px var(--num-btn-shadow);
+}
+.dial-pad button:active {
+  background-color: var(--num-btn-shadow);
+}
+.dial-pad #reset, .dial-pad #del {
+  background-color: var(--fn-btn-bg);
+  color: var(--fn-btn-txt);
+  font-size: 1rem;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 0px 0px var(--fn-btn-shadow);
+}
+.dial-pad #reset:active, .dial-pad #del:active {
+  background-color: var(--fn-btn-shadow);
+}
+.dial-pad #reset {
+  grid-column: 1/3;
+  width: 90%;
+}
+.dial-pad #equal {
+  grid-column: 3/5;
+  width: 90%;
+  background-color: var(--equal-btn-bg);
+  color: var(--equal-btn-txt);
+  box-shadow: 0px 3px 0px 0px var(--equal-btn-shadow);
+}
+.dial-pad #equal:active {
+  background-color: var(--equal-btn-shadow);
+}/*# sourceMappingURL=main.css.map */
