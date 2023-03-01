@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const changeTheme = (e) => {
-  const theme = process.env.PUBLIC_URL+"/styles/theme"+e.target.id+"vars.css";
+  const theme = process.env.PUBLIC_URL+"/styles/"+e.target.id+"vars.css";
   const themeLink = document.getElementById("stylesheet");
   themeLink.href = theme;
   const activeTheme = document.querySelector(".active-theme");
@@ -75,9 +75,9 @@ function App() {
             <p><span>1</span><span>2</span><span>3</span></p>
             <div className="indicator-div">
               <div className="inner-indicator">
-                <div id="1" className="active-theme" onClick={changeTheme}></div>
-                <div id="2" onClick={changeTheme}></div>
-                <div id="3" onClick={changeTheme}></div>
+                <div id="theme1" className="active-theme" onClick={changeTheme}></div>
+                <div id="theme2" onClick={changeTheme}></div>
+                <div id="theme3" onClick={changeTheme}></div>
               </div>
             </div>
           </div>
