@@ -26,3 +26,7 @@ yarn-error.log*
 *.scss
 *.css.map
 style-guide.md
+*.firebase
+*.firbaserc
+firebase.json
+*.sh

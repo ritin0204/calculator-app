@@ -91,6 +91,9 @@ function App() {
       <div className="dial-pad">
         {buttons}
       </div>
+      <div className='footer'>
+        <p>Created By <a href='https://www.linkedin.com/in/ritin-tiwari'>@Ritin Tiwari</a></p>
+      </div>
     </div>
   );
 }
